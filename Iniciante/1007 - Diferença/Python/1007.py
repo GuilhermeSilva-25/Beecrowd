@@ -2,5 +2,10 @@ A = int(input())
 B = int(input())
 C = int(input())
 D = int(input())
-DIFERENCA = A * B - C * D
-print(f"DIFERENCA = {DIFERENCA}")
+
+
+def diferenca(x, y, z, w):
+    print(f"DIFERENCA = {x*y - z*w}")
+
+
+diferenca(A, B, C, D)

@@ -1,4 +1,9 @@
 A = int(input())
 B = int(input())
-X = A + B
-print(f"X = {X}")
+
+
+def soma(x, y):
+    print(f"X = {x+y}")
+
+
+soma(A, B)

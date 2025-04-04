@@ -1,6 +1,14 @@
 nome_vendedor = input()
 salario = float(input())
 total_vendas = float(input())
-comissao = total_vendas * 0.15
-total = salario + comissao
-print(f"TOTAL = R$ {total:.2f}")
+
+
+def comissao(a):
+    return a * 0.15
+
+
+def salario_total(b, c):
+    print(f"TOTAL = R$ {b + comissao(c):.2f}")
+
+
+salario_total(salario, total_vendas)

@@ -1,4 +1,9 @@
 A = int(input())
 B = int(input())
-PROD = A * B
-print(f"PROD = {PROD}")
+
+
+def multiplicacao(x, y):
+    print(f"PROD = {x*y}")
+
+
+multiplicacao(A, B)

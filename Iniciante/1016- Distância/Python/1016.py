@@ -1,3 +1,8 @@
 km = int(input())
-distancia_tempo = km * 2
-print(f"{distancia_tempo} minutos")
+
+
+def distancia_tempo(a):
+    print(f"{a * 2} minutos")
+
+
+distancia_tempo(km)

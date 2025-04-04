@@ -1,4 +1,9 @@
 pi = 3.14159
 raio = float(input())
-area = pi * (raio**2) # calculo de área de uma circuferência
-print(f"A={area:.4f}")
+
+
+def area(pi, raio):
+    print(f"A={pi * raio**2:.4f}")
+
+
+area(pi, raio)

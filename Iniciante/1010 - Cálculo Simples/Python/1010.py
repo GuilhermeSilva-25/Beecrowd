@@ -6,5 +6,10 @@ v1 = float(v1)
 c2 = int(c2)
 q2 = int(q2)
 v2 = float(v2)
-total = (q1 * v1) + (q2 * v2)
-print(f"VALOR A PAGAR: R$ {total:.2f}")
+
+
+def valor(a, b, c, d):
+    print(f"VALOR A PAGAR: R$ {(a * b) + (c * d):.2f}")
+
+
+valor(q1, v1, q2, v2)
