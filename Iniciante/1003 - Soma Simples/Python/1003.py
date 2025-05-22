@@ -1,9 +1,12 @@
-A = int(input())
-B = int(input())
+def main():
+    A = int(input())
+    B = int(input())
+
+    print(f"SOMA = {soma(A, B)}")
 
 
 def soma(x, y):
-    print(f"SOMA = {x+y}")
+    return x + y
 
 
-soma(A, B)
+main()
