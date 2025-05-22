@@ -1,9 +1,13 @@
-A = float(input())
-B = float(input())
-C = float(input())
+def main():
+    A = float(input())
+    B = float(input())
+    C = float(input())
+
+    print(f"MEDIA = {media(A, B, C):.1f}")
+
 
 def media(x, y, z):
-  print(f"MEDIA = {(x * 2 + y * 3 + z * 5) / 10:.1f}")
+    return (x * 2 + y * 3 + z * 5) / 10
 
-media(A, B, C)
 
+main()
