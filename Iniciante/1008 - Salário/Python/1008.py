@@ -1,9 +1,15 @@
-num_fun = int(input())
-horas_trab = int(input())
-valor_hora = float(input())
+def main():
+    numero_funcionario = int(input())
+    horas_trabalhadas = int(input())
+    valor_hora = float(input())
+
+    print(
+        f"NUMBER = {numero_funcionario}\nSALARY = U$ {salario(horas_trabalhadas, valor_hora):.2f}"
+    )
 
 
-def salario(a, b, c):
-  print(f"NUMBER = {a}\nSALARY = U$ {c * b:.2f}")
+def salario(b, c):
+    return c * b
 
-salario(num_fun, valor_hora, horas_trab)
+
+main()
