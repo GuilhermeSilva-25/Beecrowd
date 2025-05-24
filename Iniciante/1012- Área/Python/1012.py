@@ -1,35 +1,35 @@
-A, B, C = input().split()
-A = float(A)
-B = float(B)
-C = float(C)
-pi = 3.14159
+def main():
+    A, B, C = input().split()
+    A = float(A)
+    B = float(B)
+    C = float(C)
+    pi = 3.14159
+
+    print(f"TRIANGULO: {area_triangulo(A, C):.3f}")
+    print(f"CIRCULO: {area_circulo(pi, C):.3f}")
+    print(f"TRAPEZIO: {area_trapezio(A, B, C):.3f}")
+    print(f"QUADRADO: {area_quadrado(B):.3f}")
+    print(f"RETANGULO: {area_retangulo(A, B):.3f}")
 
 
 def area_triangulo(a, c):
-    print(f"TRIANGULO: {a*c/2:.3f}")
+    return a * c / 2
 
 
 def area_circulo(p, c):
-    print(f"CIRCULO: {p*c**2:.3f}")
+    return p * c**2
 
 
 def area_trapezio(a, b, c):
-    print(f"TRAPEZIO: {((a+b)*c)/2:.3f}")
+    return ((a + b) * c) / 2
 
 
 def area_quadrado(b):
-    print(f"QUADRADO: {b*b:.3f}")
+    return b * b
 
 
 def area_retangulo(a, b):
-    print(f"RETANGULO: {a*b:.3f}")
+    return a * b
 
 
-def calculos(a, b, c, p):
-    area_triangulo(a, c)
-    area_circulo(p, c)
-    area_trapezio(a, b, c)
-    area_quadrado(b)
-    area_retangulo(a, b)
-
-calculos(A, B, C, pi)
+main()
