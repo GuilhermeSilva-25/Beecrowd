@@ -1,9 +1,12 @@
-raio = float(input())
-pi = 3.14159
+def main():
+    raio = float(input())
+    pi = 3.14159
+
+    print(f"VOLUME = {volume(raio, pi):.3f}")
 
 
 def volume(a, b):
-    print(f"VOLUME = {(4.0 / 3) * b * (a**3):.3f}")
+    return (4.0 / 3) * b * (a**3)
 
 
-volume(raio, pi)
+main()
