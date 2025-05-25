@@ -1,17 +1,13 @@
-a, b, c = input().split()
-a = int(a)
-b = int(b)
-c = int(c)
+def main():
+    lista = input().split()
+
+    print(f"{numero_maior(lista)} eh o maior")
 
 
-def maior_numero(a, b, c):
-    if a >= b and a >= c:
-        print(f"{a} eh o maior")
-    else:
-        if b >= a and b >= c:
-            print(f"{b} eh o maior")
-        else:
-            print(f"{c} eh o maior")
+def numero_maior(l):
+    l = list(map(int, l))
+    l.sort()
+    return l[-1]
 
 
-maior_numero(a, b, c)
+main()
