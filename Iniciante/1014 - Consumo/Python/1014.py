@@ -1,9 +1,12 @@
-X = int(input())
-Y = float(input())
+def main():
+    X = int(input())
+    Y = float(input())
+
+    print(f"{consumo(X, Y):.3f} km/l")
 
 
 def consumo(a, b):
-    print(f"{a/b:.3f} km/l")
+    return a / b
 
 
-consumo(X, Y)
+main()
