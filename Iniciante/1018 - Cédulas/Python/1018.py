@@ -1,13 +1,16 @@
-def cedulas():
+def main():
     valor = int(input())
     print(valor)
     cedulas = [100, 50, 20, 10, 5, 2, 1]
-    contador = 0
 
-    while contador < len(cedulas):
-        quantidade_cedulas = valor // cedulas[contador]
-        print(f"{quantidade_cedulas} nota(s) de R$ {cedulas[contador]},00")
-        valor -= quantidade_cedulas * cedulas[contador]
-        contador += 1
+    notas(cedulas, valor)
 
-cedulas()
+
+def notas(x, y):
+    for item in x:
+        quantidade_cedulas = y // item
+        print(f"{quantidade_cedulas} nota(s) de R$ {item},00")
+        y -= quantidade_cedulas * item
+
+
+main()
