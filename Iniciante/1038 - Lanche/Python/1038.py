@@ -1,19 +1,27 @@
-cod, qt = input().split()
-cod = int(cod)
-qt = int(qt)
+def main():
+    entrada = input().split()
+    compra = list(map(int, entrada))
+    cardapio = produtos()
+
+    print(f"Total: R$ {conta(cardapio, compra):.2f}")
 
 
-def conta():
+def produtos():
+    cardapio = [
+        {"cd": 1, "especificacao": "Cachorro Quente", "preco": 4.00},
+        {"cd": 2, "especificacao": "X-Salada", "preco": 4.50},
+        {"cd": 3, "especificacao": "X-Bacon", "preco": 5.00},
+        {"cd": 4, "especificacao": "Torrada Simples", "preco": 2.00},
+        {"cd": 5, "especificacao": "Refrigerante", "preco": 1.50},
+    ]
 
-    if cod == 1:
-        return f"Total: R$ {qt*4:.2f}"
-    elif cod == 2:
-        return f"Total: R$ {qt*4.5:.2f}"
-    elif cod == 3:
-        return f"Total: R$ {qt*5:.2f}"
-    elif cod == 4:
-        return f"Total: R$ {qt*2:.2f}"
-    elif cod == 5:
-        return f"Total: R$ {qt*1.5:.2f}"
+    return cardapio
 
-print(conta())
+
+def conta(a, b):
+    for item in a:
+        if b[0] == item["cd"]:
+            return item["preco"] * b[1]
+
+
+main()
