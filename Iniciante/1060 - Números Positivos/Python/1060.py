@@ -1,29 +1,22 @@
-a = float(input())
-b = float(input())
-c = float(input())
-d = float(input())
-e = float(input())
-f = float(input())
+def main():
+    lista = entradas()
+    print(f"{positivo(lista)} valores positivos")
 
 
-def verificador_positivo():
-
-    contador = 0
-
-    if a > 0:
-        contador += 1
-    if b > 0:
-        contador += 1
-    if c > 0:
-        contador += 1
-    if d > 0:
-        contador += 1
-    if e > 0:
-        contador += 1
-    if f > 0:
-        contador += 1
-
-    return contador
+def entradas():
+    lista = []
+    for entrada in range(6):
+        valor = float(input())
+        lista.append(valor)
+    return lista
 
 
-print(f"{verificador_positivo()} valores positivos")
+def positivo(l):
+    positivos = 0
+    for item in l:
+        if item >= 0:
+            positivos += 1
+    return positivos
+
+
+main()
