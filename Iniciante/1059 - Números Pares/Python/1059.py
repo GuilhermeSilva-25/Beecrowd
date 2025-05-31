@@ -1,8 +1,10 @@
-def mostrar_pares():
-    contador = 2
-    while contador <= 100:
+def main():
+    contagem()
+
+
+def contagem():
+    for contador in range(2, 101, 2):
         print(contador)
-        contador += 2
 
 
-mostrar_pares()
+main()
