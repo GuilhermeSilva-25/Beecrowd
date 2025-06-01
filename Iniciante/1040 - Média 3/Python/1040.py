@@ -1,34 +1,38 @@
-def media():
-    n1, n2, n3, n4 = input().split()
-    n1 = float(n1)
-    n2 = float(n2)
-    n3 = float(n3)
-    n4 = float(n4)
-    m = (n1 * 2 + n2 * 3 + n3 * 4 + n4) / 10
-    print(f"Media: {m:.1f}")
-    avaliacao(m)
-
-
-def avaliacao(a):
-    if a >= 7:
-        print("Aluno aprovado.")
-    elif a < 5:
-        print("Aluno reprovado.")
+def main():
+    entradas = input().split()
+    notas = list(map(float, entradas))
+    media = calculo_media(notas)
+    print(f"Media: {media:.1f}")
+    status = avaliacao_inicial(media)
+    if status != "Aluno em exame.":
+        print(status)
     else:
-        print("Aluno em exame.")
-        n5 = float(input())
-        print(f"Nota do exame: {n5:.1f}")
-        nova_media(n5, a)
+        print(status)
+        exame(media)
 
 
-def nova_media(x, y):
-    nm = (x + y) / 2
-    if nm >= 5:
+def calculo_media(notas):
+    return (notas[0] * 2 + notas[1] * 3 + notas[2] * 4 + notas[3]) / 10
+
+
+def avaliacao_inicial(media):
+    if media >= 7:
+        return "Aluno aprovado."
+    elif media < 5:
+        return "Aluno reprovado."
+    else:
+        return "Aluno em exame."
+
+
+def exame(media):
+    nota_exame = float(input())
+    print(f"Nota do exame: {nota_exame:.1f}")
+    nova_media = (media + nota_exame) / 2
+    if nova_media >= 5:
         print("Aluno aprovado.")
-        print(f"Media final: {nm:.1f}")
     else:
         print("Aluno reprovado.")
-        print(f"Media final: {nm:.1f}")
+    print(f"Media final: {nova_media:.1f}")
 
 
-media()
+main()
