@@ -1,22 +1,26 @@
-def quadrante():
+def main():
     x, y = input().split()
     x = float(x)
     y = float(y)
 
+    print(quadrante(x, y))
+
+
+def quadrante(x, y):
     if x == 0 and y == 0:
-        print("Origem")
+        return "Origem"
     elif x > 0 and y > 0:
-        print("Q1")
+        return "Q1"
     elif x > 0 and y < 0:
-        print("Q4")
+        return "Q4"
     elif x < 0 and y > 0:
-        print("Q2")
+        return "Q2"
     elif x < 0 and y < 0:
-        print("Q3")
+        return "Q3"
     elif x == 0 and y != 0:
-        print("Eixo Y")
+        return "Eixo Y"
     elif y == 0 and x != 0:
-        print("Eixo X")
+        return "Eixo X"
 
 
-quadrante()
+main()
