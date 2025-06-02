@@ -1,7 +1,9 @@
-num = int(input())
+def main():
+    num = int(input())
+    print(mes(num))
 
 
-def mes():
+def mes(num):
 
     if num == 1:
         return "January"
@@ -29,4 +31,4 @@ def mes():
         return "December"
 
 
-print(mes())
+main()
