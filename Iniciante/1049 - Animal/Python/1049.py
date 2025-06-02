@@ -1,25 +1,28 @@
-a = input()
-b = input()
-c = input()
+def main():
+    a = input()
+    b = input()
+    c = input()
+
+    print(animal(a, b, c))
 
 
 def animal(a, b, c):
     if a == "vertebrado" and b == "ave" and c == "carnivoro":
-        print("aguia")
+        return "aguia"
     elif a == "vertebrado" and b == "ave" and c == "onivoro":
-        print("pomba")
+        return "pomba"
     elif a == "vertebrado" and b == "mamifero" and c == "onivoro":
-        print("homem")
+        return "homem"
     elif a == "vertebrado" and b == "mamifero" and c == "herbivoro":
-        print("vaca")
+        return "vaca"
     elif a == "invertebrado" and b == "inseto" and c == "hematofago":
-        print("pulga")
+        return "pulga"
     elif a == "invertebrado" and b == "inseto" and c == "herbivoro":
-        print("lagarta")
+        return "lagarta"
     elif a == "invertebrado" and b == "anelideo" and c == "hematofago":
-        print("sanguessuga")
+        return "sanguessuga"
     elif a == "invertebrado" and b == "anelideo" and c == "onivoro":
-        print("minhoca")
+        return "minhoca"
 
 
-animal(a, b, c)
+main()
