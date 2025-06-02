@@ -1,13 +1,16 @@
-A, B = input().split()
-A = int(A)
-B = int(B)
+def main():
+    A, B = input().split()
+    A = int(A)
+    B = int(B)
+
+    print(multiplos(A, B))
 
 
 def multiplos(a, b):
     if a % b == 0 or b % a == 0:
-        print("Sao Multiplos")
+        return "Sao Multiplos"
     else:
-        print("Nao sao Multiplos")
+        return "Nao sao Multiplos"
 
 
-multiplos(A, B)
+main()
