@@ -1,26 +1,18 @@
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
-e = int(input())
+def main():
+    lista = []
+    for i in range(5):
+        entrada = int(input())
+        lista.append(entrada)
+
+    print(f"{verificador_par(lista)} valores pares")
 
 
-def verificador_par():
-
+def verificador_par(l):
     contador = 0
-
-    if a % 2 == 0:
-        contador += 1
-    if b % 2 == 0:
-        contador += 1
-    if c % 2 == 0:
-        contador += 1
-    if d % 2 == 0:
-        contador += 1
-    if e % 2 == 0:
-        contador += 1
-
+    for i in l:
+        if i % 2 == 0:
+            contador += 1
     return contador
 
 
-print(f"{verificador_par()} valores pares")
+main()
