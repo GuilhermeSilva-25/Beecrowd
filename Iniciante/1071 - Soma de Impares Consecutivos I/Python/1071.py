@@ -1,15 +1,23 @@
-def soma_impares():
+def main():
     X = int(input())
     Y = int(input())
 
-    somador = X - 1
+    print(soma_impares(X, Y))
 
+
+def soma_impares(x, y):
+    if x >= y:
+        somador = x - 1
+        controle = y
+    else:
+        somador = y - 1
+        controle = x
     soma = 0
-    while somador > Y:
+    while somador > controle:
         if somador % 2 != 0:
             soma += somador
         somador -= 1
     return soma
 
 
-print(soma_impares())
+main()
