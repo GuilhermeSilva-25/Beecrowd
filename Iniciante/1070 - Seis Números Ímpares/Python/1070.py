@@ -1,13 +1,18 @@
-def valores_impares():
+def main():
     X = int(input())
-    contador = 0
 
-    while contador < 6:
-        if X % 2 == 0:
-            X += 1
-        print(X)
-        X += 2
-        contador += 1
+    valores_impares(X)
 
 
-valores_impares()
+def valores_impares(x):
+    i = 0
+
+    while i < 6:
+        if x % 2 == 0:
+            x += 1
+        print(x)
+        x += 2
+        i += 1
+
+
+main()
