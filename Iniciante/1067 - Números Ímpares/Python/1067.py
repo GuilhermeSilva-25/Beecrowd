@@ -1,11 +1,14 @@
-X = int(input())
+def main():
+    X = int(input())
+
+    mostrar_impares(X)
 
 
-def mostrar_impares():
+def mostrar_impares(x):
     contador = 1
-    while contador <= X:
+    while contador <= x:
         print(contador)
         contador += 2
 
 
-mostrar_impares()
+main()
