@@ -1,18 +1,21 @@
-def in_or_out():
+def main():
     N = int(input())
-    contador = 0
+
+    print(in_or_out(N))
+
+
+def in_or_out(n):
     dentro = 0
     fora = 0
 
-    while contador < N:
+    for i in range(n):
         X = int(input())
         if 10 <= X <= 20:
             dentro += 1
         else:
             fora += 1
-        contador += 1
 
-    print(f"{dentro} in\n{fora} out")
+    return f"{dentro} in\n{fora} out"
 
 
-in_or_out()
+main()
