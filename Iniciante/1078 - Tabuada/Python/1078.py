@@ -1,10 +1,14 @@
-def tabuada():
+def main():
     N = int(input())
-    contador = 1
 
-    while contador <= 10:
-        print(f"{contador} x {N} = {contador * N}")
-        contador += 1
+    tabuada(N)
 
 
-tabuada()
+def tabuada(n):
+    i = 1
+    while i <= 10:
+        print(f"{i} x {n} = {i * n}")
+        i += 1
+
+
+main()
