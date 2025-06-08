@@ -1,4 +1,4 @@
-def maior_valor():
+def main():
     numero = 0
     maior_valor = 0
     posicao = 0
@@ -17,4 +17,4 @@ def maior_valor():
     print(posicao)
 
 
-maior_valor()
+main()
