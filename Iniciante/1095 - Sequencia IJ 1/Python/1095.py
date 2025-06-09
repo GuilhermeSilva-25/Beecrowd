@@ -1,4 +1,4 @@
-def sequencia():
+def main():
     I = 1
     J = 60
     while J >= 0:
@@ -7,4 +7,4 @@ def sequencia():
         J -= 5
 
 
-sequencia()
+main()
