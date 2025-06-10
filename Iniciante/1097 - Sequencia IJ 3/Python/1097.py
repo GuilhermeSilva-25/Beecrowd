@@ -1,4 +1,4 @@
-def sequencia():
+def main():
     I = 1
     J_inicial = 7
     while I <= 9:
@@ -13,4 +13,4 @@ def sequencia():
         contador = 1
 
 
-sequencia()
+main()
