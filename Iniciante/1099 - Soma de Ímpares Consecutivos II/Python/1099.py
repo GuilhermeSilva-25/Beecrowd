@@ -1,8 +1,11 @@
-def soma_impares():
+def main():
     N = int(input())
-    contador = 0
+    soma_impares(N)
 
-    while contador < N:
+
+def soma_impares(n):
+    contador = 0
+    while contador < n:
         X, Y = input().split()
         X = int(X)
         Y = int(Y)
@@ -28,4 +31,4 @@ def soma_impares():
         print(soma)
 
 
-soma_impares()
+main()
