@@ -1,4 +1,4 @@
-def senha():
+def main():
     senha_correta = 2002
     validador = 0
 
@@ -11,4 +11,4 @@ def senha():
             print("Senha Invalida")
 
 
-senha()
+main()
