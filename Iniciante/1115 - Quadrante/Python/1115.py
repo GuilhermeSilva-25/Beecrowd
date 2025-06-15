@@ -1,4 +1,4 @@
-def quadrante():
+def main():
     parada = 0
     while parada == 0:
         X, Y = input().split()
@@ -17,4 +17,4 @@ def quadrante():
             print("segundo")
 
 
-quadrante()
+main()
