@@ -1,4 +1,4 @@
-def media():
+def main():
     verificador = 0
     media = 0
     contador = 0
@@ -15,4 +15,4 @@ def media():
         print(f"media = {media:.2f}")
         verificador = 1
 
-media()
+main()
