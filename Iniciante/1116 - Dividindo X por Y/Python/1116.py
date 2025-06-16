@@ -1,4 +1,4 @@
-def divisao():
+def main():
     N = int(input())
     contador = 0
 
@@ -16,4 +16,4 @@ def divisao():
         contador += 1
 
 
-divisao()
+main()
