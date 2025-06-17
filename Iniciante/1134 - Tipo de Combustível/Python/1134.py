@@ -1,4 +1,4 @@
-def combustivel():
+def main():
     verificador = 0
     alcool = 0
     gasolina = 0
@@ -19,4 +19,4 @@ def combustivel():
     print(f"MUITO OBRIGADO\nAlcool: {alcool}\nGasolina: {gasolina}\nDiesel: {diesel}")
 
 
-combustivel()
+main()
