@@ -1,4 +1,4 @@
-def media_idades():
+def main():
     idade = int(input())
     contador = 0
     soma_idade = 0
@@ -9,7 +9,7 @@ def media_idades():
         contador += 1
 
     media = soma_idade / contador
-    return f"{media:.2f}"
+    print(f"{media:.2f}")
 
 
-print(media_idades())
+main()
