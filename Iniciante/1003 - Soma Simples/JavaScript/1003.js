@@ -1,15 +1,11 @@
 function main() {
-  var input = require("fs").readFileSync("/dev/stdin", "utf8");
-  var lines = input.split("\n");
+  const input = require("fs").readFileSync("/dev/stdin", "utf8");
+  const lines = input.split("\n");
 
   const A = parseInt(lines.shift());
   const B = parseInt(lines.shift());
-
-  console.log(`SOMA = ${soma(A, B)}`);
+  const SOMA = A + B;
+  console.log(`SOMA = ${SOMA}`);
 }
 
-function soma(x, y) {
-  return x + y;
-}
-
-main()
+main();
