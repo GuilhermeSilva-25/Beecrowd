@@ -1,12 +1,8 @@
 def main():
     A = int(input())
     B = int(input())
+    PROD = A * B
+    print(f"PROD = {PROD}")
 
-    print(f"PROD = {multiplicacao(A, B)}")
-
-
-def multiplicacao(x, y):
-    return x * y
-
-
-main()
+if __name__ == "__main__":
+    main()

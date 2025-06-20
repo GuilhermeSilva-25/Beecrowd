@@ -5,8 +5,8 @@ function main(): void {
   const lines: string[] = input.split("\n");
   const A: number = parseInt(lines.shift()!);
   const B: number = parseInt(lines.shift()!);
-  const SOMA: number = A + B;
-  console.log(`SOMA = ${SOMA}`);
+  const PROD: number = A * B;
+  console.log(`PROD = ${PROD}`);
 }
 
 main();

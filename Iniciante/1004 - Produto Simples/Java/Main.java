@@ -5,8 +5,8 @@ public class Main {
     Scanner sc = new Scanner(System.in);
     int A = sc.nextInt();
     int B = sc.nextInt();
-    int SOMA = A + B;
-    System.out.printf("SOMA = %d%n", SOMA);
+    int PROD = A * B;
+    System.out.printf("PROD = %d%n", PROD);
     sc.close();
   }
 }
