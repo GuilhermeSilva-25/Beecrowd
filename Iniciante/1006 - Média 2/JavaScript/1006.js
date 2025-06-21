@@ -1,16 +1,15 @@
 function main() {
-  var input = require("fs").readFileSync("/dev/stdin", "utf8");
-  var lines = input.split("\n");
-
+  const input = require("fs").readFileSync("/dev/stdin", "utf8");
+  const lines = input.split("\n");
   const A = parseFloat(lines.shift());
   const B = parseFloat(lines.shift());
   const C = parseFloat(lines.shift());
-
-  console.log(`MEDIA = ${media(A, B, C).toFixed(1)}`);
+  const weightA = 2;
+  const weightB = 3;
+  const weightC = 5;
+  const weightTotal = weightA + weightB + weightC; 
+  const mean = (A * weightA + B * weightB + C * weightC) / weightTotal;
+  console.log(`MEDIA = ${mean.toFixed(1)}`);
 }
 
-function media(x, y, z) {
-  return (x * 2 + y * 3 + z * 5) / 10;
-}
-
-main()
+main();

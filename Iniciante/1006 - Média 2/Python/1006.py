@@ -2,12 +2,13 @@ def main():
     A = float(input())
     B = float(input())
     C = float(input())
+    weight_A = 2
+    weight_B = 3
+    weight_C = 5
+    weight_total = weight_A + weight_B + weight_C
+    mean = (A * weight_A + B * weight_B + C * weight_C) / weight_total
+    print(f"MEDIA = {mean:.1f}")
 
-    print(f"MEDIA = {media(A, B, C):.1f}")
 
-
-def media(x, y, z):
-    return (x * 2 + y * 3 + z * 5) / 10
-
-
-main()
+if __name__ == "__main__":
+    main()
