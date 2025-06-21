@@ -3,12 +3,8 @@ def main():
     B = int(input())
     C = int(input())
     D = int(input())
+    DIFERENCA = A * B - C * D
+    print(f"DIFERENCA = {DIFERENCA}")
 
-    print(f"DIFERENCA = {diferenca(A, B, C, D)}")
-
-
-def diferenca(x, y, z, w):
-    return x * y - z * w
-
-
-main()
+if __name__ == "__main__":
+    main()
