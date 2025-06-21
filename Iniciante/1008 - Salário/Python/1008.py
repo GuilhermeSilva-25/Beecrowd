@@ -1,15 +1,10 @@
 def main():
-    numero_funcionario = int(input())
-    horas_trabalhadas = int(input())
-    valor_hora = float(input())
-
-    print(
-        f"NUMBER = {numero_funcionario}\nSALARY = U$ {salario(horas_trabalhadas, valor_hora):.2f}"
-    )
+    employee_number = int(input())
+    hours_worked = int(input())
+    hourly_rate = float(input())
+    salary = hours_worked * hourly_rate
+    print(f"NUMBER = {employee_number}\nSALARY = U$ {salary:.2f}")
 
 
-def salario(b, c):
-    return c * b
-
-
-main()
+if __name__ == "__main__":
+    main()
