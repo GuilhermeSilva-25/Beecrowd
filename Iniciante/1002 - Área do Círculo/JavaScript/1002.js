@@ -1,15 +1,9 @@
 function main() {
-  var input = require("fs").readFileSync("/dev/stdin", "utf8");
-  var lines = input.split("\n");
-
-  const pi = 3.14159;
-  const raio = parseFloat(lines.shift());
-
-  console.log(`A=${area(pi, raio)}`);
+  const input = require("fs").readFileSync("/dev/stdin", "utf8");
+  const PI = 3.14159;
+  const raio = parseFloat(input);
+  const area = PI * (raio ** 2);
+  console.log(`A=${area.toFixed(4)}`);
 }
 
-function area(n, r) {
-  return (n * Math.pow(r, 2)).toFixed(4);
-}
-
-main()
+main();

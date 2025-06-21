@@ -1,12 +1,8 @@
 def main():
-    pi = 3.14159
+    PI = 3.14159
     raio = float(input())
+    area = PI * (raio ** 2)
+    print(f"A={area:.4f}")
 
-    print(f"A={area(pi, raio):.4f}")
-
-
-def area(n, r):
-    return n * r**2
-
-
-main()
+if __name__ == "__main__":
+    main()
