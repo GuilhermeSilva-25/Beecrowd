@@ -1,15 +1,12 @@
 function main() {
-  var input = require("fs").readFileSync("/dev/stdin", "utf8");
-  var lines = input.split("\n");
-
-  const A = parseFloat(lines.shift());
-  const B = parseFloat(lines.shift());
-
-  console.log(`MEDIA = ${media(A, B).toFixed(5)}`);
-}
-
-function media(x, y) {
-  return (x * 3.5 + y * 7.5) / 11;
+  const input = require("fs").readFileSync("/dev/stdin", "utf8");
+  const lines = input.split("\n");
+  const [A, B] = lines.slice(0, 2).map(Number);
+  const weightA = 3.5;
+  const weightB = 7.5;
+  const weightTotal = weightA + weightB;
+  const mean = (A * weightA + B * weightB) / weightTotal;
+  console.log(`MEDIA = ${mean.toFixed(5)}`);
 }
 
 main();
