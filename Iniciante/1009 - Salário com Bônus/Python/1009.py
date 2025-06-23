@@ -1,13 +1,10 @@
 def main():
-    nome_vendedor = input()
-    salario = float(input())
-    total_vendas = float(input())
+    seller_name = input()
+    salary = float(input())
+    total_sales = float(input())
+    commission = 0.15
+    total_salary = salary + (total_sales * commission)
+    print(f"TOTAL = R$ {total_salary:.2f}")
 
-    print(f"TOTAL = R$ {salario + comissao(total_vendas):.2f}")
-
-
-def comissao(a):
-    return a * 0.15
-
-
-main()
+if __name__ == "__main__":
+    main()

@@ -1,16 +1,12 @@
 function main() {
-  var input = require("fs").readFileSync("/dev/stdin", "utf8");
-  var lines = input.split("\n");
-
-  const nomeVendedor = lines.shift();
-  const salario = parseFloat(lines.shift());
-  const totalVendas = parseFloat(lines.shift());
-
-  console.log(`TOTAL = R$ ${(salario + comissao(totalVendas)).toFixed(2)}`);
-}
-
-function comissao(a) {
-  return a * 0.15;
+  const input = require("fs").readFileSync("/dev/stdin", "utf8");
+  const lines = input.split("\n");
+  const sellerName = lines.shift();
+  const salary = parseFloat(lines.shift());
+  const totalSales = parseFloat(lines.shift());
+  const commission = 0.15;
+  const totalSalary = salary + ( totalSales * commission);
+  console.log(`TOTAL = R$ ${totalSalary.toFixed(2)}`);
 }
 
 main();
