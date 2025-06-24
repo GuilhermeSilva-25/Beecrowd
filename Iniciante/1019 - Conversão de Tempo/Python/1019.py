@@ -1,19 +1,12 @@
 def main():
     N = int(input())
-
-    print(conversao(N))
-
-
-def conversao(n):
-    horas = 0
-    minutos = 0
-    segundos = 0
-
-    horas = n // 3600
-    minutos = (n % 3600) // 60
-    segundos = (n % 3600) % 60
-
-    return f"{horas}:{minutos}:{segundos}"
+    TOTAL_SECONDS_ONE_HOUR = 3600
+    TOTAL_MINUTES_ONE_HOUR = 60
+    hours = N // TOTAL_SECONDS_ONE_HOUR
+    minutes = (N % TOTAL_SECONDS_ONE_HOUR) // TOTAL_MINUTES_ONE_HOUR
+    seconds = (N % TOTAL_SECONDS_ONE_HOUR) % TOTAL_MINUTES_ONE_HOUR
+    print(f"{hours}:{minutes}:{seconds}")
 
 
-main()
+if __name__ == "__main__":
+    main()
