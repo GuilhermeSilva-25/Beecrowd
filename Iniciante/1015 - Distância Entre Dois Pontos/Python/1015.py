@@ -1,16 +1,11 @@
+from math import sqrt
+
+
 def main():
-    x1, y1 = input().split()
-    x2, y2 = input().split()
-    x1 = float(x1)
-    x2 = float(x2)
-    y1 = float(y1)
-    y2 = float(y2)
+    x1, y1 = map(float, input().split())
+    x2, y2 = map(float, input().split())
+    distance = sqrt((x2 - x1)**2 + (y2 - y1)**2)
+    print(f"{distance:.4f}")
 
-    print(f"{distancia(x1, x2, y1, y2):.4f}")
-
-
-def distancia(a, b, c, d):
-    return ((b - a) ** 2 + (d - c) ** 2) ** (1 / 2)
-
-
-main()
+if __name__ == "__main__":
+    main()
