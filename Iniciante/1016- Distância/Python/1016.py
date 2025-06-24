@@ -1,11 +1,9 @@
 def main():
     km = int(input())
-
-    print(f"{distancia_tempo(km)} minutos")
-
-
-def distancia_tempo(a):
-    return a * 2
+    minutes_per_km = 2
+    time = km * minutes_per_km
+    print(f"{time} minutos")
 
 
-main()
+if __name__ == "__main__":
+    main()
