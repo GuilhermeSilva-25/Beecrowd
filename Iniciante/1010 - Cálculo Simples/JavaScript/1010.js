@@ -1,17 +1,17 @@
 function main() {
-  var input = require("fs").readFileSync("/dev/stdin", "utf8");
-  var lines = input.split("\n");
-  let valorTotal = 0;
+  const input = require("fs").readFileSync("/dev/stdin", "utf8");
+  const lines = input.split("\n");
+  let totalValue = 0;
 
   for (let i = 0; i < 2; i++) {
     let item = lines[i].split(" ");
-    let codigo = parseInt(item[0]);
-    let quantidade = parseInt(item[1]);
-    let valor = parseFloat(item[2]);
-    valorTotal += quantidade * valor;
+    let code = parseInt(item[0]);
+    let amount = parseInt(item[1]);
+    let value = parseFloat(item[2]);
+    totalValue += amount * value;
   }
 
-  console.log(`VALOR A PAGAR: R$ ${valorTotal.toFixed(2)}`);
+  console.log(`VALOR A PAGAR: R$ ${totalValue.toFixed(2)}`);
 }
 
 main();
