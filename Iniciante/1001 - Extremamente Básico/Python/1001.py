@@ -4,5 +4,6 @@ def main():
     X = A + B
     print(f"X = {X}")
 
+
 if __name__ == "__main__":
     main()
